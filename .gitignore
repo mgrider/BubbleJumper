@@ -1,0 +1,50 @@
+
+# =============== #
+# Unity generated #
+# =============== #
+/**/Temp/
+/**/Library/
+
+# in builds
+builds/**/Classes/
+builds/**/Data/
+builds/**/Libraries/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+/**/ExportedObj/
+/**/obj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===== #
+# Xcode #
+# ===== #
+
+builds/0.1/Rhapsody360/build/*
+*.pbxuser
+*.mode1v3
+# Xcode4 stuff (at least for now :)
+*.xcworkspace
+/**/xcuserdata
+/**/xcshareddata
+
