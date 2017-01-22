@@ -10,10 +10,10 @@ public class BubbleLoadingManager : MonoBehaviour {
 	private List<GameObject> bubbles;
 	private List<GameObject> bubblesToRemove;
 
-	private float minX = -406.0f;
-	private float maxX = 406.0f;
-	private float startY = -340.0f;
-	private float endY = 340.0f;
+	private float minX = -484.0f;
+	private float maxX = 484.0f;
+	private float startY = -484.0f;
+	private float endY = 484.0f;
 
 	private float yIncrement = 1.0f;
 
@@ -65,5 +65,12 @@ public class BubbleLoadingManager : MonoBehaviour {
 			Destroy(bub);
 		}
 //		bubbles.RemoveAll(o => o.GetComponent<RectTransform>().localPosition.y > endY);
+	}
+
+	public void ButtonPressed(GameObject bubble)
+	{
+		MonoBehaviour.FindObjectOfType<GameManager>().score++;
+		bubbles.Remove(bubble);
+		Destroy(bubble);
 	}
 }
